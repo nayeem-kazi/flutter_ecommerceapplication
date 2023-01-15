@@ -45,13 +45,16 @@ class CategoryDetails extends StatelessWidget {
             20.heightBox,
             Expanded(
                 child: GridView.builder(
-                  physics:const BouncingScrollPhysics(),
+                    physics: const BouncingScrollPhysics(),
                     shrinkWrap: true,
                     itemCount: 6,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,mainAxisExtent: 250,mainAxisSpacing: 8,crossAxisSpacing: 8),
+                        crossAxisCount: 2,
+                        mainAxisExtent: 250,
+                        mainAxisSpacing: 8,
+                        crossAxisSpacing: 8),
                     itemBuilder: (context, index) {
-                    return Column(
+                      return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset(
@@ -74,7 +77,13 @@ class CategoryDetails extends StatelessWidget {
                               .size(16)
                               .make(),
                         ],
-                      ).box.white.margin(EdgeInsets.symmetric(horizontal: 4)).roundedSM.padding(EdgeInsets.all(12)).make();
+                      )
+                          .box
+                          .white
+                          .margin(EdgeInsets.symmetric(horizontal: 4))
+                          .roundedSM
+                          .padding(EdgeInsets.all(12))
+                          .make();
                     }))
           ],
         ),
